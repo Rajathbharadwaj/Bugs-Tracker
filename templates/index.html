@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=0.6">
+        <title>{{title}}</title>
+        <style type="text/css">
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins';
+            }
+            .mainHeading{
+                text-align: center;
+                background-color: #6940bc;
+                color: #fff;
+                font-family: 'Times New Roman';
+                padding: 10px;
+            }
+            .wrap h2{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .wrap{
+                width: 410px;
+                overflow: hidden;
+                margin: auto;
+                margin-top: 120px;
+                padding: 20px;
+                background: #fff;
+                border:1px solid silver;
+                border-radius: 5px;
+            }
+            .wrap input[type="text"],input[type="password"]{
+                width:400px;
+                height: 35px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                border: 1px solid silver;
+                padding: 5px;
+            }
+            .wrap .btn-login{
+                padding: 5px;
+                width: 412px;
+                height:40px;
+                background-color: #55add6;
+                color: #fff;
+                border:0;
+                border-radius: 3px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainHeading">
+            <h1>Bug Tracking System</h1>
+        </div>
+    <div class="container-fluid">
+        <h2>Track bug status</h2>
+        <form action="/track" method="post">
+           <div class="form-group">
+            <input type="submit" class="btn-login" value="Search">
+            <p style="color: red">{{msg}}</p>
+           </div>
+        </form>
+    </div>
+        <div class="container-fluid">
+        <h2>File a bug record</h2>
+        <form action="/file" method="post">
+           <div class="form-group">
+            <input type="submit" class="btn-login" value="File">
+
+           </div>
+        </form>
+    </div>
+        <div class="container-fluid">
+        <h2>Edit a bug record</h2>
+        <form action="/edit" method="post">
+           <div class="form-group">
+            <input type="submit" class="btn-login" value="Edit">
+
+           </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
